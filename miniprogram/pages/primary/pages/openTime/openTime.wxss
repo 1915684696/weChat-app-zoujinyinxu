@@ -1,0 +1,9 @@
+/* miniprogram/pages/openTime/openTime.wxss */
+.aaa{
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.bbb{
+  margin-top: 10px;
+  margin-left: 15px;
+}

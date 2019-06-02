@@ -1,0 +1,60 @@
+<view>
+  <image style="" src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/fuhaomu.jpg" mode='{{aspectFit}}' class='datu'>
+  </image>
+</view>
+<view class='wrap'>
+<view class='main_top'>
+
+<view class='audio'>
+<audio src="{{src}}" id="myAudio" bindtimeupdate="updata"></audio>
+  <view class='audio_left'>
+    <view class='title'>
+      殷墟妇好墓
+    </view>
+      <view class='text_firsttime'>{{result}}</view>
+      <view class='slider'>
+      <slider bindchange="sliderChange" step="2" value="{{currentTime}}" max="{{duration}}" block-size = "9" selected-color="#ff5e5e" />
+      </view>
+      <view class='text_lasttime'>02:04</view>
+
+  </view>
+  <view class='audio_right'>
+    <view class='audio_control' bindtap="audioPlay" wx:if="{{!isOpen}}">
+      <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/fuhaomuStop.jpg" class='audio_image'></image>
+    </view>
+    <view class='audio_control' bindtap="audioPause" wx:if="{{isOpen}}">
+      <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/fuhaomuStart.jpg" class='audio_image'></image>
+    </view>
+
+    <view style='clear:both;'></view>
+  </view>
+  <view style='clear:both;'></view>
+
+
+</view>
+
+</view>
+
+<view class='content_mid'>
+  <view class='content_title_current'>
+    <text class='shu'>|</text>
+    简介
+  </view>
+  <view class='xin'>
+    {{xin_num}}
+  </view>
+  <view class='xin_circle' bindtap='touchtap'>
+    <image class='xin_img' src='{{xin_src}}'></image>
+  </view>
+</view>
+
+<view class='main_foot'>
+<view class='content'>
+<text class='text' space='emsp'>
+  著名的妇好墓是1928年以来殷墟宫殿宗庙区内最重要的考古发现之一，也是殷墟科学发掘以来发现的唯一保存完整的商代王室成员墓葬。
+  该墓南北长5.6米，东西宽4米，深7.5米。墓上建有被甲骨卜辞称为“母辛宗”的享堂。墓室有殉人16人，并出土了1928件精美的随葬品，其中青铜器468件，玉器755件，骨器564件；并出土海贝6800枚。随葬品不仅数量巨大，种类丰富，而且造型新颖，工艺精湛，堪称国之瑰宝，充分反映了商代高度发达的手工业制造水平。根据该墓的地层关系及大部分青铜器上的“妇好”铭文，考古学者认定墓主人为商王武丁的配偶——妇好。妇好墓是目前唯一能与甲骨文联系并断定年代、墓主人及其身份的商王室成员墓葬。
+</text>
+</view>
+
+</view>
+</view>

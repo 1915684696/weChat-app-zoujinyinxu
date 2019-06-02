@@ -1,0 +1,53 @@
+/* pages/record/redord.wxss */
+page{
+  background-color: #f6f6f6;
+}
+.con{
+  width: 100%;
+  background-color: #F5F5F5;
+  padding-top: 5px;
+}
+.item{
+  width: 100%;
+  background-color: white;
+  margin-top: 15px;
+  padding: 10px 0 15px 10px;
+  overflow: hidden;
+}
+.finishFlag{
+  width: 90px;
+  height: 35px;
+  transform: rotate(40deg);
+  size: 16px;
+  color: red;
+  border-radius: 10px;
+  border: 1px solid red;
+  text-align: center;
+  line-height: 40px;
+  float: right;
+  margin-right: 20px;
+  margin-top: 18px;
+  z-index: 5;
+}
+.item_text{
+  float: left;
+}
+.blackTxt{
+  color: black;
+  height: 25px;
+  line-height: 25px;
+  text-align: left;
+}
+.txt{
+  color: black;
+  height: 37px;
+  line-height: 37px;
+  text-align: left;
+}
+.finish{
+  margin:0px 20px 0 0;
+  padding: 2px 13px 2px 13px;
+  border: 2px solid #F5F5F5;
+  border-radius: 5px;
+  float: right;
+}

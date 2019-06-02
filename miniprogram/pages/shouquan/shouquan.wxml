@@ -1,0 +1,13 @@
+
+<view class='con'>
+  <view class='icon'>
+    <image src='http://pre10ftti.bkt.clouddn.com/20190527zoujinyinxushouquanfangtu.jpg' class='img'></image>
+  </view>
+</view>
+<view class='text'>
+走进殷墟
+</view>
+
+<view  class="btn_view">
+      <button open-type="getUserInfo"  class="btn" bindtap="bindBtn">需要先登录哟</button>
+</view>

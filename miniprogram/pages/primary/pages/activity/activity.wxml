@@ -1,0 +1,44 @@
+<view class='fu'>
+<view class='time'>
+ 昨天 12:30
+</view>
+</view>
+<view class='item' bindtap='bindliuyi'>
+  <view class='title_text'>
+    喜迎六一！
+  </view>
+  <view class='main_img'>
+<image src='https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/primary/liuyi.jpg' class='img'></image>
+  </view>
+  <view class='main_text'>
+  六一儿童节来殷墟宫殿宗庙遗址参观可领取纪念礼物哦！
+  </view>
+  <view class='hr'></view>
+  <view class='more'>
+    <view class='more_text'>查看详情</view>
+    <view class='more_sign'>></view>
+  </view>
+</view>
+
+
+<view class='fu'>
+<view class='time'>
+ 2019-5-20 12:30
+</view>
+</view>
+<view class='item' bindtap='bindliuyi'>
+  <view class='title_text'>
+    殷墟文化节来啦
+  </view>
+  <view class='main_img'>
+<image src='https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/primary/wenhuajie.jpg' class='img'></image>
+  </view>
+  <view class='main_text'>
+  一年一度文化节将于5月27日进行，16:30分将会在广场抽取10名幸运游客送出超级大礼！
+  </view>
+  <view class='hr'></view>
+  <view class='more'>
+    <view class='more_text'>查看详情</view>
+    <view class='more_sign'>></view>
+  </view>
+</view>

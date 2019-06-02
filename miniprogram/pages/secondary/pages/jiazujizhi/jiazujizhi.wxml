@@ -1,0 +1,60 @@
+<view>
+  <image style="" src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/jiazujizhi.jpg" mode='{{aspectFit}}' class='datu'>
+  </image>
+</view>
+<view class='wrap'>
+<view class='main_top'>
+
+<view class='audio'>
+<audio src="{{src}}" id="myAudio" bindtimeupdate="updata"></audio>
+  <view class='audio_left'>
+    <view class='title'>
+      甲组基址
+    </view>
+      <view class='text_firsttime'>{{result}}</view>
+      <view class='slider'>
+      <slider bindchange="sliderChange" step="2" value="{{currentTime}}" max="{{duration}}" block-size = "9" selected-color="#ff5e5e" />
+      </view>
+      <view class='text_lasttime'>00:27</view>
+
+  </view>
+  <view class='audio_right'>
+    <view class='audio_control' bindtap="audioPlay" wx:if="{{!isOpen}}">
+      <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/jiazujizhiStop.jpg" class='audio_image'></image>
+    </view>
+    <view class='audio_control' bindtap="audioPause" wx:if="{{isOpen}}">
+      <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/jiazujizhiStart.jpg" class='audio_image'></image>
+    </view>
+
+    <view style='clear:both;'></view>
+  </view>
+  <view style='clear:both;'></view>
+
+
+</view>
+
+</view>
+
+<view class='content_mid'>
+  <view class='content_title_current'>
+    <text class='shu'>|</text>
+    简介
+  </view>
+  <view class='xin'>
+    {{xin_num}}
+  </view>
+  <view class='xin_circle' bindtap='touchtap'>
+    <image class='xin_img' src='{{xin_src}}'></image>
+  </view>
+</view>
+
+<view class='main_foot'>
+<view class='content'>
+<text class='text' space='emsp'>
+  1973年以前这里发掘的53座建筑基址，是殷墟宫殿宗庙区的主体和殷王都全盘规划、布局结构的重心所在，被考古学者划分为甲、乙、丙三组基址。
+  甲组建筑基址共发现15座，是宫殿宗庙区内建设时间最早、使用时间最长的建筑，被认为是商王室的宫室、寝居之所。
+</text>
+</view>
+
+</view>
+</view>

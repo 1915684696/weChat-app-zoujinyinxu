@@ -1,0 +1,60 @@
+<view>
+  <image style="" src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/fangyindadian.jpg" mode='{{aspectFit}}' class='datu'>
+  </image>
+</view>
+<view class='wrap'>
+<view class='main_top'>
+
+<view class='audio'>
+<audio src="{{src}}" id="myAudio" bindtimeupdate="updata"></audio>
+  <view class='audio_left'>
+    <view class='title'>
+      仿殷大殿
+    </view>
+      <view class='text_firsttime'>{{result}}</view>
+      <view class='slider'>
+      <slider bindchange="sliderChange" step="2" value="{{currentTime}}" max="{{duration}}" block-size = "9" selected-color="#ff5e5e" />
+      </view>
+      <view class='text_lasttime'>00:59</view>
+
+  </view>
+  <view class='audio_right'>
+    <view class='audio_control' bindtap="audioPlay" wx:if="{{!isOpen}}">
+      <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/fangyindadianStop.jpg" class='audio_image'></image>
+    </view>
+    <view class='audio_control' bindtap="audioPause" wx:if="{{isOpen}}">
+      <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/fangyindadianStart.jpg" class='audio_image'></image>
+    </view>
+
+    <view style='clear:both;'></view>
+  </view>
+  <view style='clear:both;'></view>
+
+
+</view>
+
+</view>
+
+<view class='content_mid'>
+  <view class='content_title_current'>
+    <text class='shu'>|</text>
+    简介
+  </view>
+  <view class='xin'>
+    {{xin_num}}
+  </view>
+  <view class='xin_circle' bindtap='touchtap'>
+    <image class='xin_img' src='{{xin_src}}'></image>
+  </view>
+</view>
+
+<view class='main_foot'>
+<view class='content'>
+<text class='text' space='emsp'>
+  仿殷大殿是在乙组基址上复原的其中一座，它东西长51米，由于东侧的20米地下尚未发掘，所以只复原了西侧的31米，是宫殿宗庙区主要建筑之一。
+  该建筑以黄土、木料作为主要建筑材料，坐落于厚实高大的夯土台基上，房基置柱础，房架用木柱支撑，墙用夯土版筑，屋顶覆以茅草，正如《周礼考工记》中记载的“茅茨土阶、四阿重屋”式的建筑风格，造型庄严肃穆、质朴典雅，具有浓郁的中国宫殿建筑特色。整座建筑规模巨大、左右对称，反映出中国古代建筑特有的均衡感、秩序感和审美意趣，集中体现了殷商时期的宫殿建设格局、建筑艺术、建筑方法、建筑技术，代表了中国古代早期宫殿建筑的先进水平。
+</text>
+</view>
+
+</view>
+</view>

@@ -1,0 +1,61 @@
+<view>
+  <image style="" src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/bingzujizhi.jpg" mode='{{aspectFit}}' class='datu'>
+  </image>
+</view>
+<view class='wrap'>
+<view class='main_top'>
+
+<view class='audio'>
+<audio src="{{src}}" id="myAudio" bindtimeupdate="updata"></audio>
+  <view class='audio_left'>
+    <view class='title'>
+      丙组基址
+    </view>
+      <view class='text_firsttime'>{{result}}</view>
+      <view class='slider'>
+      <slider bindchange="sliderChange" step="2" value="{{currentTime}}" max="{{duration}}" block-size = "9" selected-color="#ff5e5e" />
+      </view>
+      <view class='text_lasttime'>00:39</view>
+
+  </view>
+  <view class='audio_right'>
+    <view class='audio_control' bindtap="audioPlay" wx:if="{{!isOpen}}">
+      <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/bingzujizhiStop.jpg" class='audio_image'></image>
+    </view>
+    <view class='audio_control' bindtap="audioPause" wx:if="{{isOpen}}">
+      <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/bingzujizhiStart.jpg" class='audio_image'></image>
+    </view>
+
+    <view style='clear:both;'></view>
+  </view>
+  <view style='clear:both;'></view>
+
+
+</view>
+
+</view>
+
+<view class='content_mid'>
+  <view class='content_title_current'>
+    <text class='shu'>|</text>
+    简介
+  </view>
+  <view class='xin'>
+    {{xin_num}}
+  </view>
+  <view class='xin_circle' bindtap='touchtap'>
+    <image class='xin_img' src='{{xin_src}}'></image>
+  </view>
+</view>
+
+<view class='main_foot'>
+<view class='content'>
+<text class='text' space='emsp'>
+  1973年以前这里发掘的53座建筑基址，是殷墟宫殿宗庙区的主体和殷王都全盘规划、布局结构的重心所在，被考古学者划分为甲、乙、丙三组基址。
+  丙组共发现17座，被认为是商王室的祭坛建筑。目前，在宫殿宗庙区已发现大型夯土建筑基址80余座。这些建筑基址形制阔大、气势恢宏、布局严整，按照中国古代宫殿建筑“前朝后寝、左祖右社”的格局，
+依次排列，分布在以宫殿区为中心的范围内。
+</text>
+</view>
+
+</view>
+</view>

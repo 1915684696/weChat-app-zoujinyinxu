@@ -1,0 +1,65 @@
+<view>
+  <image style="" src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/yizujizhi.jpg" mode='{{aspectFit}}' class='datu'>
+  </image>
+</view>
+<view class='wrap'>
+<view class='main_top'>
+
+<view class='audio'>
+<audio src="{{src}}" id="myAudio" bindtimeupdate="updata"></audio>
+  <view class='audio_left'>
+    <view class='title'>
+      乙组基址
+    </view>
+      <view class='text_firsttime'>{{result}}</view>
+      <view class='slider'>
+      <slider bindchange="sliderChange" step="2" value="{{currentTime}}" max="{{duration}}" block-size = "9" selected-color="#ff5e5e" />
+      </view>
+      <view class='text_lasttime'>02:23</view>
+
+  </view>
+  <view class='audio_right'>
+    <view class='audio_control' bindtap="audioPlay" wx:if="{{!isOpen}}">
+      <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/yizujizhiStop.jpg" class='audio_image'></image>
+    </view>
+    <view class='audio_control' bindtap="audioPause" wx:if="{{isOpen}}">
+      <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/yizujizhiStart.jpg" class='audio_image'></image>
+    </view>
+
+    <view style='clear:both;'></view>
+  </view>
+  <view style='clear:both;'></view>
+
+
+</view>
+
+</view>
+
+<view class='content_mid'>
+  <view class='content_title_current'>
+    <text class='shu'>|</text>
+    简介
+  </view>
+  <view class='xin'>
+    {{xin_num}}
+  </view>
+  <view class='xin_circle' bindtap='touchtap'>
+    <image class='xin_img' src='{{xin_src}}'></image>
+  </view>
+</view>
+
+<view class='main_foot'>
+<view class='content'>
+<text class='text' space='emsp'>
+  1973年以前这里发掘的53座建筑基址，是殷墟宫殿宗庙区的主体和殷王都全盘规划、布局结构的重心所在，被考古学者划分为甲、乙、丙三组基址。
+  乙组建筑共发现21座，多数结构繁复，面积巨大，互相连属。这些建筑被认为是殷王室的宗庙建筑。殷墟时期以等级制度为核心的礼制突出表现在丧葬和祭祀制度中，在营造宫室宗庙等建筑时，要举行一系列非常血腥的祭祀仪式，借以除妖避邪，镇宅安居。殷墟发现的大量的人祭和人殉的遗迹，为商代晚期大规模的人祭、人殉现象提供了直接的证据。乙七基址就是一个典型代表。该基址为商代宗庙建筑遗址，规模宏大，推想其地面的建筑也定为不凡。宗庙建筑一般要经过奠基、置础、安门、落成四个步骤。
+（1）、奠基：地基夯成后，在基址挖坑埋狗，重要的建筑兼埋儿童，这是奠基仪式；
+（2）、置础：在夯实的地基上放柱础石，起到加固柱子和防止腐烂的作用，这是要埋入牛、羊、狗三牲，有时也加用人牲。然后填土夯实。这是置础仪式；
+（3）、安门：在门槛前后左右挖方坑，分别埋置看门的侍卫1——3人，皆跪仆相向，手执铜戈、盾牌，防卫目的异常明显，这是安门仪式；
+（4）、落成：整个建筑完成后，要举行隆重的落成仪式，这时的用牲种类多，规模大，有时要杀掉上百人，连同牲畜，车辆，整整齐齐埋在建筑物旁。在乙七基址之南曾发现成行的密集小葬坑和车马坑遗迹，有北、中、南三组，仅在中组80座祭祀坑中，就发现人牲390余人。由此看来，中国古代早期大量地使用“人祭”与“人殉”的野蛮残酷的祭祀和殉葬方式，
+在殷墟时期达到了极致。
+</text>
+</view>
+
+</view>
+</view>

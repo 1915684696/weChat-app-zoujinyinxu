@@ -1,0 +1,50 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"appid": "wxbe06b6351389325a",
+	"projectname": "%E8%B5%B0%E8%BF%9B%E6%AE%B7%E5%A2%9F",
+	"libVersion": "2.2.5",
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 0,
+			"list": [
+				{
+					"id": 0,
+					"name": "自定义",
+					"pathName": "pages/shouquan/shouquan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "简介",
+					"pathName": "pages/introduce/introduce",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

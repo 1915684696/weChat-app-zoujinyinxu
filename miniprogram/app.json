@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/homepage/homepage",
+    "pages/shouquan/shouquan",
+    "pages/myattendances/myattendances"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "走进殷墟",
+    "navigationBarTextStyle": "black"
+  },
+  "subPackages": [
+    {
+      "root": "pages/primary/",
+      "pages": [
+        "pages/activity/activity",
+        "pages/liuyi/liuyi",
+        "pages/introduce/introduce",
+        "pages/known/known",
+        "pages/openTime/openTime",
+        "pages/traffic/traffic",
+        "pages/sousuo/sousuo"
+      ]
+    },
+    {
+      "root": "pages/secondary/",
+      "pages": [
+        "pages/aoxingyizhi/aoxingyizhi",
+        "pages/bingzujizhi/bingzujizhi",
+        "pages/bowuguan/bowuguan",
+        "pages/chemakeng/chemakeng",
+        "pages/fangyindadian/fangyindadian",
+        "pages/fuhaomu/fuhaomu",
+        "pages/jiagubeilang/jiagubeilang",
+        "pages/jiagubeilin/jiagubeilin",
+        "pages/jiagujiaoxue/jiagujiaoxue",
+        "pages/jiazujizhi/jiazujizhi",
+        "pages/yizujizhi/yizujizhi"
+      ]
+    }
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
+}

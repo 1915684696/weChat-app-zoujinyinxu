@@ -1,0 +1,59 @@
+<view>
+  <image style="" src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/aoxingyizhi.jpg" mode='{{aspectFit}}' class='datu'>
+  </image>
+</view>
+<view class='wrap'>
+<view class='main_top'>
+
+<view class='audio'>
+  <audio src="{{src}}" id="myAudio" bindtimeupdate="updata"></audio>
+    <view class='audio_left'>
+      <view class='title'>
+        凹形宫殿遗址
+      </view>
+        <view class='text_firsttime'>{{result}}</view>
+        <view class='slider'>
+        <slider bindchange="sliderChange" step="2" value="{{currentTime}}" max="{{duration}}" block-size = "9" selected-color="#ff5e5e" />
+        </view>
+        <view class='text_lasttime'>00:29</view>
+
+    </view>
+    <view class='audio_right'>
+      <view class='audio_control' bindtap="audioPlay" wx:if="{{!isOpen}}">
+        <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/aoxingyizhiStop.jpg" class='audio_image'></image>
+      </view>
+      <view class='audio_control' bindtap="audioPause" wx:if="{{isOpen}}">
+        <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/aoxingyizhiStart.jpg" class='audio_image'></image>
+      </view>
+
+      <view style='clear:both;'></view>
+    </view>
+    <view style='clear:both;'></view>
+
+
+  </view>
+
+</view>
+
+<view class='content_mid'>
+  <view class='content_title_current'>
+    <text class='shu'>|</text>
+    简介
+  </view>
+  <view class='xin'>
+    {{xin_num}}
+  </view>
+  <view class='xin_circle' bindtap='touchtap'>
+    <image class='xin_img' src='{{xin_src}}'></image>
+  </view>
+</view>
+
+<view class='main_foot'>
+<view class='content'>
+<text class='text' space='emsp'>
+  54号基址发现于20世纪80年代初。该基址濒临洹水西岸，整体呈凹字形，缺口向东。包括南、北、西三组基址，这些房基构成半封闭状的建筑群，面积达5000平方米，结构严谨，构思精巧，已具备了中国“四合院”的雏形。该基址也是20世纪50年代以来宫殿宗庙区内发现的最重要的建筑基址。
+</text>
+</view>
+
+</view>
+</view>

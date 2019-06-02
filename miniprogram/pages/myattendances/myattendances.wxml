@@ -1,0 +1,20 @@
+<!--pages/record/redord.wxml-->
+<view class='con'>
+  <view class='fu' wx:for='{{attendanceNum}}' wx:key='{{index}}'>
+    <view class='item' wx:if='{{!isAttend[index+1]}}'>
+      <view class='item_text'>
+        <view class='txt'>{{array[index+1]}}</view>
+        <view class='txt'>还未打卡哦^-^</view>
+      </view>
+    </view>
+    <view class='item' wx:if='{{isAttend[index+1]}}'>
+      <view class='item_text'>
+        <view class='txt'>{{array[index+1]}}</view>
+        <view class='txt'>{{records[index].attendTime}}</view>
+      </view>
+      <view class='finishFlag'>已打卡</view>
+    </view>
+
+  </view>
+
+</view>

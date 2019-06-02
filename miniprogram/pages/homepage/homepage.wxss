@@ -1,0 +1,139 @@
+.wrap{
+  width: 100%;
+  height: 100vh;
+}
+
+
+.backgroundGuide{
+  position: absolute;
+  width: 750rpx;
+  top: 0;
+  opacity:0.6;
+  z-index: 0
+}
+
+.intro{
+  position: absolute;
+  width: 620rpx;
+  color: white;
+  height: 680rpx;
+  padding-left: 90rpx;
+  padding-top: 30rpx;
+  top:0;
+  left: 0;
+  z-index: 6;
+}
+.intro_text{
+  width: 100%;
+  height: 120rpx;
+  opacity: 1;
+  line-height: 120rpx;
+  font-size: 16px;
+  z-index: 7;
+}
+.intro_know{
+  margin-top: 90rpx;
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  box-sizing:border-box;
+  justify-content: center;
+  align-items: center;
+}
+.intro_know_text{
+  width: 200rpx;
+  height: 90rpx;
+  border-radius: 45rpx;
+  border: 2px dashed white;
+  text-align: center;
+  line-height: 90rpx;
+}
+
+
+.backgroundRoute{
+  position: absolute;
+  width: 750rpx;
+  top: 0;
+  opacity:0.4;
+  z-index: 11
+}
+.Routetop{
+  position: absolute;
+  width: 750rpx;
+  height: 300rpx;
+  bottom: 0rpx;
+  background-color: white;
+  z-index: 12;
+}
+.guideview{
+  height: 149rpx;
+  margin-left: 50rpx;
+  font-size: 14px;
+  line-height: 149rpx;
+}
+.hr{
+margin: 0 auto;
+width: 750rpx;
+height: 2rpx;
+background-color: #D8D8D8;
+}
+
+.huodongTag{
+  width: 90rpx;
+  height: 90rpx;
+  position: absolute;
+  right: 40rpx;
+  top: 50rpx;
+  z-index: 2;
+}
+.recordsTag{
+  width: 90rpx;
+  height: 90rpx;
+  position: absolute;
+  right: 40rpx;
+  top: 170rpx;
+  z-index: 2;
+}
+.scanTag{
+  width: 90rpx;
+  height: 90rpx;
+  position: absolute;
+  right: 40rpx;
+  top: 290rpx;
+  z-index: 2;
+}
+.introduceTag{
+  width: 90rpx;
+  height: 90rpx;
+  position: absolute;
+  right: 40rpx;
+  top: 410rpx;
+  z-index: 2;
+}
+
+
+
+.mylocationTag{
+  width: 90rpx;
+  height: 90rpx;
+  position: absolute;
+  left: 100rpx;
+  bottom: 140rpx;
+  z-index: 2;
+}
+.daohangTag{
+  width: 90rpx;
+  height: 90rpx;
+  position: absolute;
+  right: 100rpx;
+  bottom: 140rpx;
+  z-index: 2;
+}
+.routeTag{
+  width: 160rpx;
+  height: 160rpx;
+  position: absolute;
+  right: 295rpx;
+  bottom: 110rpx;
+  z-index: 0;
+}

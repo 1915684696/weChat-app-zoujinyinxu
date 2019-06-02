@@ -1,0 +1,54 @@
+page{
+  box-sizing:border-box;
+  background-color: #f5f5f5;
+}
+.list{
+  padding-left: 14px;
+  width: 100%;
+  overflow: hidden;
+  background-color: white;
+}
+.circulate{
+  float: left;
+}
+.list_item{
+  height: 42px;
+  padding-top: 10px;
+  color: black;
+  font-size: 14px;
+  line-height: 40px;
+  float: left;
+  margin: 0 7px;
+}
+.list_item_current{
+  height: 42px;
+  padding-top: 10px;
+  color: #B09C79;
+  font-size: 14px;
+  line-height: 40px;
+  float: left;
+  margin: 0 7px;
+
+}
+.item{
+  overflow:hidden;width:100%; background-color:white;margin-top:2px;
+}
+.item_img{
+  float: left;
+  background-color: white;
+  height: 40px;
+  margin: 2px 0;
+  padding: 0px 10px;
+}
+.img{
+  width: 40px;
+  height: 40px;
+}
+.text{
+  float: left;
+  background-color: white;
+  height: 40px;
+  margin: 2px 0;
+  font-size: 14px;
+  line-height: 40px;
+}

@@ -1,0 +1,49 @@
+<view class='list'>
+<view wx:for="{{kinds}}" wx:key="{{index}}" class='circulate'>
+  <view wx:if="{{index==current}}" class='list_item_current' data-index="{{index}}" bindtap='bindKinds'>
+    <view style='background-color:#b09c79;height:42px;'>
+    <view style='background-color:white;height:40px;'>
+        {{item}}
+    </view>
+    </view>
+  </view>
+  <view wx:else class='list_item' data-index="{{index}}" bindtap='bindKinds'>
+    {{item}}
+  </view>
+</view>
+
+</view>
+
+<swiper
+  indicator-dots="{{indicatorDots}}"
+  autoplay="{{autoplay}}"
+  current='{{current}}'
+  bindchange='swiperTab'
+  style='height:{{swiper_height}}px'
+>
+  <swiper-item>
+    <view wx:for='{{structures}}' wx:key='{{index}}'>
+      <view class='item' data-index='{{index}}' bindtap='bindStructures'>
+        <view class='item_img'>
+          <image class='img' src='../../resources/images/structure.png'></image>
+        </view>
+        <view class='text'>
+          {{item}}
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+  <swiper-item>
+    <view wx:for='{{wcs}}' wx:key='{{index}}'>
+      <view class='item' data-index='{{index}}' bindtap='bindWcs'>
+        <view class='item_img'>
+          <image class='img' src='../../resources/images/wc.png'></image>
+        </view>
+        <view class='text'>
+          {{item}}
+        </view>
+      </view>
+    </view>
+  </swiper-item>
+
+</swiper>

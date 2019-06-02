@@ -1,0 +1,60 @@
+<view>
+  <image style="" src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/chemakeng.jpg" mode='{{aspectFit}}' class='datu'>
+  </image>
+</view>
+<view class='wrap'>
+<view class='main_top'>
+
+<view class='audio'>
+<audio src="{{src}}" id="myAudio" bindtimeupdate="updata"></audio>
+  <view class='audio_left'>
+    <view class='title'>
+      殷墟车马坑
+    </view>
+      <view class='text_firsttime'>{{result}}</view>
+      <view class='slider'>
+      <slider bindchange="sliderChange" step="2" value="{{currentTime}}" max="{{duration}}" block-size = "9" selected-color="#ff5e5e" />
+      </view>
+      <view class='text_lasttime'>02:04</view>
+
+  </view>
+  <view class='audio_right'>
+    <view class='audio_control' bindtap="audioPlay" wx:if="{{!isOpen}}">
+      <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/chemakengStop.jpg" class='audio_image'></image>
+    </view>
+    <view class='audio_control' bindtap="audioPause" wx:if="{{isOpen}}">
+      <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/chemakengStart.jpg" class='audio_image'></image>
+    </view>
+
+    <view style='clear:both;'></view>
+  </view>
+  <view style='clear:both;'></view>
+
+
+</view>
+
+</view>
+
+<view class='content_mid'>
+  <view class='content_title_current'>
+    <text class='shu'>|</text>
+    简介
+  </view>
+  <view class='xin'>
+    {{xin_num}}
+  </view>
+  <view class='xin_circle' bindtap='touchtap'>
+    <image class='xin_img' src='{{xin_src}}'></image>
+  </view>
+</view>
+
+<view class='main_foot'>
+<view class='content'>
+<text class='text' space='emsp'>
+  自1928年殷墟发掘以来，曾多次发现过商代车马坑。但由于受当时发掘技术的限制，都未能将坑中的木质车架清出。1953年在殷墟首次成功清理出商代车子的残迹，搞清了车子的大体结构及部分构件的尺寸。殷墟发现并清理的多座车马坑以及道路遗存，展示了我国古代道路交通的基本雏形，对研究商代社会的阶级、等级关系、亲族制度、埋葬习俗及工艺水平等，都是极重要的研究资料。
+  华夏幅员广袤，畜力车是古代先民陆上最重要的交通工具。古文献中说夏代就发明了车，但是至今未发现夏代车的遗存。殷墟考古发掘的殷代车马坑是华夏考古发现的畜力车最早的实物标本。由此证明，我国是世界上最早发明和使用车的文明古国之一。殷代车马坑不仅展示了上古畜力车制的文明程度，同时也反映了奴隶社会残酷的杀殉制度，它是国人最形象的历史教科书。
+</text>
+</view>
+
+</view>
+</view>

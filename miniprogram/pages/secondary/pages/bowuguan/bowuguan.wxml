@@ -1,0 +1,61 @@
+<view>
+  <image style="" src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/jiaguwen.jpg" mode='{{aspectFit}}' class='datu'>
+  </image>
+</view>
+<view class='wrap'>
+<view class='main_top'>
+
+<view class='audio'>
+<audio src="{{src}}" id="myAudio" bindtimeupdate="updata"></audio>
+  <view class='audio_left'>
+    <view class='title'>
+      文字博物馆-甲骨文
+    </view>
+      <view class='text_firsttime'>{{result}}</view>
+      <view class='slider'>
+      <slider bindchange="sliderChange" step="2" value="{{currentTime}}" max="{{duration}}" block-size = "9" selected-color="#ff5e5e" />
+      </view>
+      <view class='text_lasttime'>02:04</view>
+
+  </view>
+  <view class='audio_right'>
+    <view class='audio_control' bindtap="audioPlay" wx:if="{{!isOpen}}">
+      <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/bowuguanStop.jpg" class='audio_image'></image>
+    </view>
+    <view class='audio_control' bindtap="audioPause" wx:if="{{isOpen}}">
+      <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/secondary/bowuguanStart.jpg" class='audio_image'></image>
+    </view>
+
+    <view style='clear:both;'></view>
+  </view>
+  <view style='clear:both;'></view>
+
+
+</view>
+
+</view>
+
+<view class='content_mid'>
+  <view class='content_title_current'>
+    <text class='shu'>|</text>
+    简介
+  </view>
+  <view class='xin'>
+    {{xin_num}}
+  </view>
+  <view class='xin_circle' bindtap='touchtap'>
+    <image class='xin_img' src='{{xin_src}}'></image>
+  </view>
+</view>
+
+<view class='main_foot'>
+<view class='content'>
+<text class='text' space='emsp'>
+  甲骨文，是中国目前已知最早的成系统的文字形式，是世界四大古文字之一。它具备了象形、指事、会意、形声、转注、假借等造字方法，标志着已进入了成熟阶段。殷墟甲骨文是殷王朝占卜的记录，中国古代甲骨占卜有着悠久的历史，殷墟时期则是占卜最盛行的时期，商王和贵族几乎每事必卜，占卜成为商代社会生活的重要组成部分。
+  甲骨的纳贡、收贮、整治、钻凿及占卜方法、程序和卜辞的语法、辞例等形成一套严格而有系统的制度。据甲骨文记载，殷代已有专门掌管占卜和纪录的贞人，见于卜辞的贞人约有上百人。占卜涉及内容包括祭祀、天象、年成、征伐、王事等，甚至于商王游猎、疾病、做梦、生子等。商代以后，甲骨占卜逐渐失去了其显赫地位。殷墟甲骨文的发现，见证了已经消逝的商代占卜制度，为研究中国文化史提供了重要的材料。
+  目前殷墟发现有大约15万片甲骨，4500多个单字。从甲骨文已识别的约1500个单字来看，甲骨文已具备了现代汉字结构的基本形式，其书体虽然又经历了金文、篆书、隶书、楷书等书体的演变，但是以形、音、义为特征的文字和基本语法保留下来，成为今天世界上五分之一的人口仍在使用的方块字，对中国人的思维方式、审美观产生了重要的影响，为中国书法艺术的产生与发展奠定了基础。甲骨文也因此成为世界四大古文字中唯一传承至今的文字。由甲骨文演变发展而来的汉字，在传播华夏文化、促成中国大一统国家的形成与巩固方面发挥了重要作用。
+</text>
+</view>
+
+</view>
+</view>

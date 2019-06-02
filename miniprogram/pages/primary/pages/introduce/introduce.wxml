@@ -1,0 +1,88 @@
+<view>
+  <image class="datu" src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/primary/datu.jpg" mode='{{aspectFit}}'>
+  </image>
+</view>
+<view class='wrap'>
+<view class='main_top'>
+<view class='audio'>
+<audio src="{{src}}" id="myAudio" bindtimeupdate="updata"></audio>
+  <view class='audio_left'>
+    <view class='title'>
+      安阳殷墟
+    </view>
+      <view class='text_firsttime'>{{result}}</view>
+      <view class='slider'>
+      <slider bindchange="sliderChange" step="2" value="{{currentTime}}" max="{{duration}}" block-size = "9" selected-color="#ff5e5e" />
+      </view>
+      <view class='text_lasttime'>02:04</view>
+
+  </view>
+  <view class='audio_right'>
+    <view class='audio_control' bindtap="audioPlay" wx:if="{{!isOpen}}">
+      <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/primary/introduceStop.jpg" class='audio_image'></image>
+    </view>
+    <view class='audio_control' bindtap="audioPause" wx:if="{{isOpen}}">
+      <image src="https://project-images.oss-cn-hangzhou.aliyuncs.com/zoujinyinxu/primary/introduceStart.jpg" class='audio_image'></image>
+    </view>
+
+    <view style='clear:both;'></view>
+  </view>
+  <view style='clear:both;'></view>
+
+
+</view>
+<view class='head'>
+  <image src='../../resources/images/position.png' mode='{{aspectFit}}' class='icon'></image>
+河南省安阳市西北郊小屯村殷墟路北端
+</view>
+<view class='head' bindtap='phoneCall'>
+  <image src='../../resources/images/phone.png' mode='{{aspectFit}}' class='icon'></image>
+0372-3932171
+</view>
+<view class='nav'>
+  <view class='navsmall' bindtap='turntoOpentime'>
+  <view>
+  <image src='../../resources/images/time.png' mode='{{aspectFit}}' class='nav_image'></image><br></br>
+  </view>
+  <text class='nav_text'>开放时间</text>
+  </view>
+
+
+  <view class='navsmall' bindtap='turntoTraffic'>
+  <view>
+  <image src='../../resources/images/traffic.png' mode='{{aspectFit}}' class='nav_image'></image>
+  </view>
+  <text class='nav_text'>地理交通</text>
+  </view>
+  <view class='navsmall' bindtap='turntoKnown'>
+  <view>
+  <image src='../../resources/images/known.png' mode='{{aspectFit}}' class='nav_image'></image>
+  </view>
+  <text class='nav_text'>浏览须知</text>
+  </view>
+</view>
+</view>
+<view class='main_foot'>
+<view class='content_title'>
+<text class='shu'>|</text>
+简介
+</view>
+<view class='content'>
+<text class='text' space='emsp'>
+  殷墟，原称“北蒙”，是中国商朝后期都城遗址，位于河南省安阳市。盘庚十四年，商朝第19位君主盘庚迁都于北蒙（今河南安阳），改“北蒙”名为“殷”。盘庚十五年，开始营建殷都。自盘庚迁殷，到公元前1046年帝辛亡国，经历了盘庚、小辛、小乙、武丁、祖庚、祖甲、廪辛、康丁、武乙、文丁、帝乙、帝辛共8代12位国王273年的统治，殷一直是中国商代后期的政治、经济、文化、军事中心。
+</text>
+<text class='text' space='emsp'>
+  20世纪初，殷墟因发掘甲骨文而闻名于世，1928年殷墟正式开始考古发掘，出土了大量都城建筑遗址和以甲骨文、青铜器为代表的丰富的文化遗存，系统地展现了中国商代晚期辉煌灿烂的青铜文明，确立了殷商社会作为信史的科学地位。被评为20世纪中国“100项重大考古发现”之首。
+</text>
+<text class='text' space='emsp'>
+  殷墟先后出土有字甲骨约15万片。甲骨文中所记载的资料将中国有文字记载的可信历史提前到了商朝，也产生了一门新的学科——甲骨学。
+</text>
+<text class='text' space='emsp'>
+  殷墟是中国至今第一个有文献可考、并为考古学和甲骨文所证实的都城，由殷墟王陵遗址、殷墟宫殿宗庙遗址、洹北商城遗址等构成。
+</text>
+<text class='text' space='emsp'>
+  1961年3月，国务院将殷墟列入首批全国重点文物保护单位。2006年7月，殷墟被联合国科教文组织列入世界文化遗产名录。现为国家AAAAA级旅游景区。2018年10月13日，殷墟科学发掘90周年纪念大会暨殷墟发展与考古论坛举办。2018年10月11日，入选“全国中小学生研学实践教育基地”名单。
+</text>
+</view>
+</view>
+</view>

@@ -1,0 +1,72 @@
+<!--pages/homepage.wxml-->
+<view class='wrap'>
+
+<map
+  id="map"
+  longitude="{{longitude}}"
+  latitude="{{latitude}}"
+  scale="{{scale}}"
+  controls="{{controls}}"
+  bindcontroltap="controltap"
+  bindcallouttap= "callouttap"
+  markers="{{markers}}"
+  bindmarkertap="markertap"
+  polyline="{{polyline}}"
+  bindregionchange="regionchange"
+  show-location
+  style="width: 100%; height: 100%;"
+>
+</map>
+
+<!--首次进入小程序简单功能介绍-->
+<cover-image class='backgroundGuide' bindtap='cleanGuide' src='../../images/backgroundimage.png' wx:if="{{isGuide}}"></cover-image>
+<cover-view class='intro' bindtap='cleanGuide' wx:if="{{isGuide}}">
+    <cover-view class='intro_text'>
+    1. 最新活动在这里=======>
+    </cover-view>
+    <cover-view class='intro_text'>
+    2. 点击查看打卡记录=====>
+    </cover-view>
+    <cover-view class='intro_text'>
+    3. 扫码打卡可以兑奖哦===>
+    </cover-view>
+    <cover-view class='intro_text'>
+    4. 点击查看殷墟介绍=====>
+    </cover-view>
+    <cover-view class='intro_know'>
+      <cover-view class='intro_know_text'>
+        知道了
+      </cover-view>
+    </cover-view>
+</cover-view>
+
+
+
+<cover-image class='backgroundRoute' bindtap='clearRoutebar' src='../../images/backgroundimage.png' wx:if="{{isRoute}}"></cover-image>
+<cover-view class='Routetop' wx:if="{{isRoute}}">
+<!-- <cover-view style='height:30rpx'></cover-view> -->
+<cover-view class='guideview' bindtap='bindEasyroute'>
+简单浏览推荐路线
+</cover-view>
+<cover-view class='hr'>
+</cover-view>
+<cover-view class='guideview' bindtap='bindMoreroute'>
+一日游推荐路线
+</cover-view>
+</cover-view>
+
+
+<cover-image class='introduceTag' bindtap='bindIntroduce' src='../../images/introduce.png'></cover-image>
+<cover-image class='huodongTag' bindtap='bindHuodong' src='../../images/huodong.png'></cover-image>
+<cover-image class='recordsTag' bindtap='bindRecords' src='../../images/records.png'></cover-image>
+<cover-image class='scanTag' bindtap='bindScan' src='../../images/scan.png'></cover-image>
+
+
+
+<cover-image class='mylocationTag' bindtap='bindMylocation' src='../../images/mylocation.png'></cover-image>
+
+<cover-image class='daohangTag' bindtap='bindSousuo' src='../../images/sousuo.png'></cover-image>
+
+<cover-image class='routeTag' bindtap='bindRoute' src='../../images/route.png'></cover-image>
+
+</view>
